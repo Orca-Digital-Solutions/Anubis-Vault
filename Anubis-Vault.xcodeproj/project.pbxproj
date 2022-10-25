@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58E2A95173FDF2EF71241C11 /* Pods_Anubis_Vault.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13F4797B3E19F81E8B2582D /* Pods_Anubis_Vault.framework */; };
+		613DF99828FB73F000FBC17F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF99728FB73F000FBC17F /* AppDelegate.swift */; };
+		613DF99A28FB73F000FBC17F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF99928FB73F000FBC17F /* SceneDelegate.swift */; };
+		613DF9A228FB73F000FBC17F /* Anubis_Vault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9A028FB73F000FBC17F /* Anubis_Vault.xcdatamodeld */; };
+		613DF9A428FB73F200FBC17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613DF9A328FB73F200FBC17F /* Assets.xcassets */; };
+		613DF9A728FB73F200FBC17F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613DF9A528FB73F200FBC17F /* LaunchScreen.storyboard */; };
+		613DF9B628FB771000FBC17F /* AnubisBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9B528FB771000FBC17F /* AnubisBaseViewController.swift */; };
+		613DF9BB28FB777500FBC17F /* VaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9BA28FB777500FBC17F /* VaultViewController.swift */; };
+		613DF9BD28FB805700FBC17F /* AnubisBaseUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9BC28FB805700FBC17F /* AnubisBaseUITextField.swift */; };
+		613DF9C028FBB43100FBC17F /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9BF28FBB43100FBC17F /* UITableView+Extensions.swift */; };
+		613DF9C528FBBA7700FBC17F /* AnubisBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9C428FBBA7700FBC17F /* AnubisBaseTableView.swift */; };
+		613DF9C828FBBAA500FBC17F /* AnubisVaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9C728FBBAA500FBC17F /* AnubisVaultTableViewCell.swift */; };
+		613DF9CA28FBBB0600FBC17F /* AnubisBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9C928FBBB0600FBC17F /* AnubisBaseTableViewCell.swift */; };
+		613DF9CC28FBC7AF00FBC17F /* AnubisBaseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF9CB28FBC7AF00FBC17F /* AnubisBaseUIButton.swift */; };
+		6159797729084E4600429AB3 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159797629084E4600429AB3 /* UIFont+Extensions.swift */; };
+		6159797E29086CE800429AB3 /* VaultDetailsVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159797D29086CE800429AB3 /* VaultDetailsVCRouter.swift */; };
+		6159798029086D0400429AB3 /* VaultDetailsControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159797F29086D0400429AB3 /* VaultDetailsControllerDelegates.swift */; };
+		6159798229086D3100429AB3 /* VaultDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159798129086D3100429AB3 /* VaultDetailsPresenter.swift */; };
+		6159798429086E6700429AB3 /* VaultDetailsControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159798329086E6700429AB3 /* VaultDetailsControllerConfigrator.swift */; };
+		6159798D2908776E00429AB3 /* SearchViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159798C2908776E00429AB3 /* SearchViewPresenter.swift */; };
+		6159798F2908778800429AB3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159798E2908778800429AB3 /* SearchViewController.swift */; };
+		61597991290877A400429AB3 /* SearchViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61597990290877A400429AB3 /* SearchViewController+TableView.swift */; };
+		61597993290877C200429AB3 /* SearchViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61597992290877C200429AB3 /* SearchViewController+Delegates.swift */; };
+		61597995290877F100429AB3 /* SearchVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61597994290877F100429AB3 /* SearchVCRouter.swift */; };
+		615979972908780800429AB3 /* SearchViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615979962908780800429AB3 /* SearchViewDelegates.swift */; };
+		615979992908783200429AB3 /* SearchViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615979982908783200429AB3 /* SearchViewControllerConfigrator.swift */; };
+		6180C9C328FCF62900D73C97 /* VaultViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180C9C228FCF62900D73C97 /* VaultViewController+TableView.swift */; };
+		6180C9D128FD38C600D73C97 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180C9D028FD38C600D73C97 /* CreatePasswordViewController.swift */; };
+		618669F728FEF62B006C1FEA /* AnubisBaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669F628FEF62B006C1FEA /* AnubisBaseUIView.swift */; };
+		618669F928FEF643006C1FEA /* AnubisWebServerTextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669F828FEF643006C1FEA /* AnubisWebServerTextFieldsView.swift */; };
+		61866A0628FF508A006C1FEA /* AnubisPasswordTextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61866A0528FF508A006C1FEA /* AnubisPasswordTextFieldsView.swift */; };
+		61866A0828FF9215006C1FEA /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61866A0728FF9215006C1FEA /* KeyboardManager.swift */; };
+		61866A0F28FFD9D6006C1FEA /* VaultViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61866A0E28FFD9D6006C1FEA /* VaultViewController+Delegates.swift */; };
+		61866A1128FFDA84006C1FEA /* VaultViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61866A1028FFDA84006C1FEA /* VaultViewControllerConfigrator.swift */; };
+		61866A1328FFDC4F006C1FEA /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61866A1228FFDC4F006C1FEA /* UIImage+Extensions.swift */; };
+		6198B1D429056B37002DDE8F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1D329056B37002DDE8F /* RealmManager.swift */; };
+		6198B1D729056C6A002DDE8F /* VaultPasswsordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1D629056C6A002DDE8F /* VaultPasswsordEntity.swift */; };
+		6198B1DD29057187002DDE8F /* CreatePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1DC29057187002DDE8F /* CreatePasswordPresenter.swift */; };
+		6198B1DF290571A7002DDE8F /* CreatePasswordDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1DE290571A7002DDE8F /* CreatePasswordDelegates.swift */; };
+		6198B1E1290571DF002DDE8F /* CreatePasswordViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1E0290571DF002DDE8F /* CreatePasswordViewControllerConfigrator.swift */; };
+		6198B1E329057238002DDE8F /* CreatePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1E229057237002DDE8F /* CreatePasswordRouter.swift */; };
+		6198B1E5290586F2002DDE8F /* AnubisLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1E4290586F2002DDE8F /* AnubisLoadingView.swift */; };
+		6198B1EB2905B183002DDE8F /* PasswordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198B1EA2905B183002DDE8F /* PasswordBuilder.swift */; };
+		61B225BA2902A766001063CB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225B92902A766001063CB /* String+Extensions.swift */; };
+		61B225BC2902A784001063CB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225BB2902A784001063CB /* UIColor+Extensions.swift */; };
+		61B225BE2902B28B001063CB /* AnubisBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225BD2902B28B001063CB /* AnubisBaseTabBarController.swift */; };
+		61B225C02902B40A001063CB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225BF2902B40A001063CB /* UIView+Extensions.swift */; };
+		61B225C32902C308001063CB /* UINavigationBarAppearance+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225C22902C308001063CB /* UINavigationBarAppearance+Extensions.swift */; };
+		61B225C92902C90A001063CB /* VaultVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225C82902C90A001063CB /* VaultVCRouter.swift */; };
+		61B225CB2902C914001063CB /* VaultVCPreseneter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225CA2902C914001063CB /* VaultVCPreseneter.swift */; };
+		61B225CE2902C972001063CB /* VaultViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B225CD2902C972001063CB /* VaultViewControllerDelegates.swift */; };
+		61B9CC6B290702C300F1332D /* VaultDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9CC6A290702C300F1332D /* VaultDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		613DF99428FB73F000FBC17F /* Anubis-Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anubis-Vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613DF99728FB73F000FBC17F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		613DF99928FB73F000FBC17F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		613DF9A128FB73F000FBC17F /* Anubis_Vault.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Anubis_Vault.xcdatamodel; sourceTree = "<group>"; };
+		613DF9A328FB73F200FBC17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		613DF9A628FB73F200FBC17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		613DF9A828FB73F200FBC17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		613DF9B528FB771000FBC17F /* AnubisBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseViewController.swift; sourceTree = "<group>"; };
+		613DF9BA28FB777500FBC17F /* VaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewController.swift; sourceTree = "<group>"; };
+		613DF9BC28FB805700FBC17F /* AnubisBaseUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseUITextField.swift; sourceTree = "<group>"; };
+		613DF9BF28FBB43100FBC17F /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		613DF9C428FBBA7700FBC17F /* AnubisBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseTableView.swift; sourceTree = "<group>"; };
+		613DF9C728FBBAA500FBC17F /* AnubisVaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisVaultTableViewCell.swift; sourceTree = "<group>"; };
+		613DF9C928FBBB0600FBC17F /* AnubisBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseTableViewCell.swift; sourceTree = "<group>"; };
+		613DF9CB28FBC7AF00FBC17F /* AnubisBaseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseUIButton.swift; sourceTree = "<group>"; };
+		6159797629084E4600429AB3 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		6159797D29086CE800429AB3 /* VaultDetailsVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailsVCRouter.swift; sourceTree = "<group>"; };
+		6159797F29086D0400429AB3 /* VaultDetailsControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailsControllerDelegates.swift; sourceTree = "<group>"; };
+		6159798129086D3100429AB3 /* VaultDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailsPresenter.swift; sourceTree = "<group>"; };
+		6159798329086E6700429AB3 /* VaultDetailsControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailsControllerConfigrator.swift; sourceTree = "<group>"; };
+		6159798C2908776E00429AB3 /* SearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewPresenter.swift; sourceTree = "<group>"; };
+		6159798E2908778800429AB3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		61597990290877A400429AB3 /* SearchViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+TableView.swift"; sourceTree = "<group>"; };
+		61597992290877C200429AB3 /* SearchViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+Delegates.swift"; sourceTree = "<group>"; };
+		61597994290877F100429AB3 /* SearchVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCRouter.swift; sourceTree = "<group>"; };
+		615979962908780800429AB3 /* SearchViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegates.swift; sourceTree = "<group>"; };
+		615979982908783200429AB3 /* SearchViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		6180C9C228FCF62900D73C97 /* VaultViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VaultViewController+TableView.swift"; sourceTree = "<group>"; };
+		6180C9D028FD38C600D73C97 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		618669F628FEF62B006C1FEA /* AnubisBaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseUIView.swift; sourceTree = "<group>"; };
+		618669F828FEF643006C1FEA /* AnubisWebServerTextFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisWebServerTextFieldsView.swift; sourceTree = "<group>"; };
+		61866A0528FF508A006C1FEA /* AnubisPasswordTextFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisPasswordTextFieldsView.swift; sourceTree = "<group>"; };
+		61866A0728FF9215006C1FEA /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		61866A0E28FFD9D6006C1FEA /* VaultViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VaultViewController+Delegates.swift"; sourceTree = "<group>"; };
+		61866A1028FFDA84006C1FEA /* VaultViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		61866A1228FFDC4F006C1FEA /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		6198B1D329056B37002DDE8F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		6198B1D629056C6A002DDE8F /* VaultPasswsordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultPasswsordEntity.swift; sourceTree = "<group>"; };
+		6198B1DC29057187002DDE8F /* CreatePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordPresenter.swift; sourceTree = "<group>"; };
+		6198B1DE290571A7002DDE8F /* CreatePasswordDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordDelegates.swift; sourceTree = "<group>"; };
+		6198B1E0290571DF002DDE8F /* CreatePasswordViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		6198B1E229057237002DDE8F /* CreatePasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordRouter.swift; sourceTree = "<group>"; };
+		6198B1E4290586F2002DDE8F /* AnubisLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisLoadingView.swift; sourceTree = "<group>"; };
+		6198B1EA2905B183002DDE8F /* PasswordBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordBuilder.swift; sourceTree = "<group>"; };
+		61B225B92902A766001063CB /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		61B225BB2902A784001063CB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		61B225BD2902B28B001063CB /* AnubisBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnubisBaseTabBarController.swift; sourceTree = "<group>"; };
+		61B225BF2902B40A001063CB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		61B225C22902C308001063CB /* UINavigationBarAppearance+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBarAppearance+Extensions.swift"; sourceTree = "<group>"; };
+		61B225C82902C90A001063CB /* VaultVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultVCRouter.swift; sourceTree = "<group>"; };
+		61B225CA2902C914001063CB /* VaultVCPreseneter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultVCPreseneter.swift; sourceTree = "<group>"; };
+		61B225CD2902C972001063CB /* VaultViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewControllerDelegates.swift; sourceTree = "<group>"; };
+		61B9CC6A290702C300F1332D /* VaultDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailsViewController.swift; sourceTree = "<group>"; };
+		C13F4797B3E19F81E8B2582D /* Pods_Anubis_Vault.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anubis_Vault.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D37D700DC88B5DF05F3B58 /* Pods-Anubis-Vault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis-Vault.release.xcconfig"; path = "Target Support Files/Pods-Anubis-Vault/Pods-Anubis-Vault.release.xcconfig"; sourceTree = "<group>"; };
+		DCC7E6ACBCD4D92D81DDFEDD /* Pods-Anubis-Vault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis-Vault.debug.xcconfig"; path = "Target Support Files/Pods-Anubis-Vault/Pods-Anubis-Vault.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		613DF99128FB73F000FBC17F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E2A95173FDF2EF71241C11 /* Pods_Anubis_Vault.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F8916F49888B9578A1D4D77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCC7E6ACBCD4D92D81DDFEDD /* Pods-Anubis-Vault.debug.xcconfig */,
+				D5D37D700DC88B5DF05F3B58 /* Pods-Anubis-Vault.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		613DF98B28FB73F000FBC17F = {
+			isa = PBXGroup;
+			children = (
+				613DF99628FB73F000FBC17F /* Anubis-Vault */,
+				7D9B873483DF01A5EC90DA99 /* Frameworks */,
+				1F8916F49888B9578A1D4D77 /* Pods */,
+				613DF99528FB73F000FBC17F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		613DF99528FB73F000FBC17F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				613DF99428FB73F000FBC17F /* Anubis-Vault.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		613DF99628FB73F000FBC17F /* Anubis-Vault */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9AE28FB74AB00FBC17F /* App Delegates */,
+				613DF9B128FB74D900FBC17F /* Configuration */,
+				613DF9B228FB74F000FBC17F /* Core */,
+				6198B1D529056C5F002DDE8F /* Entites */,
+				613DF9B028FB74C700FBC17F /* Resources */,
+				613DF9B728FB774200FBC17F /* Scenes */,
+				613DF9AF28FB74B600FBC17F /* Storyboards */,
+				613DF9C128FBB46A00FBC17F /* Utilities */,
+				613DF9B428FB75D700FBC17F /* Views */,
+			);
+			path = "Anubis-Vault";
+			sourceTree = "<group>";
+		};
+		613DF9AE28FB74AB00FBC17F /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				613DF99728FB73F000FBC17F /* AppDelegate.swift */,
+				613DF99928FB73F000FBC17F /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		613DF9AF28FB74B600FBC17F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9A528FB73F200FBC17F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		613DF9B028FB74C700FBC17F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9A328FB73F200FBC17F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		613DF9B128FB74D900FBC17F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9A828FB73F200FBC17F /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		613DF9B228FB74F000FBC17F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9BE28FBB41E00FBC17F /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		613DF9B328FB753100FBC17F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9A028FB73F000FBC17F /* Anubis_Vault.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		613DF9B428FB75D700FBC17F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61B225BD2902B28B001063CB /* AnubisBaseTabBarController.swift */,
+				613DF9CB28FBC7AF00FBC17F /* AnubisBaseUIButton.swift */,
+				613DF9BC28FB805700FBC17F /* AnubisBaseUITextField.swift */,
+				618669F628FEF62B006C1FEA /* AnubisBaseUIView.swift */,
+				613DF9B528FB771000FBC17F /* AnubisBaseViewController.swift */,
+				6198B1E4290586F2002DDE8F /* AnubisLoadingView.swift */,
+				6180C9D228FD7F1C00D73C97 /* Reusable Views */,
+				613DF9C628FBBA9C00FBC17F /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		613DF9B728FB774200FBC17F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				615979852908773600429AB3 /* Search */,
+				61B9CC69290702A700F1332D /* Vault Details */,
+				6180C9C828FD384F00D73C97 /* Create Password */,
+				613DF9B828FB775000FBC17F /* Vault */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		613DF9B828FB775000FBC17F /* Vault */ = {
+			isa = PBXGroup;
+			children = (
+				61866A0D28FFD6DA006C1FEA /* Configrator */,
+				61B225CC2902C95D001063CB /* Delegates \ Protocols */,
+				61B225C62902C8F8001063CB /* Presenter */,
+				61B225C72902C902001063CB /* Router */,
+				613DF9B928FB776500FBC17F /* ViewController */,
+			);
+			path = Vault;
+			sourceTree = "<group>";
+		};
+		613DF9B928FB776500FBC17F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9BA28FB777500FBC17F /* VaultViewController.swift */,
+				6180C9C228FCF62900D73C97 /* VaultViewController+TableView.swift */,
+				61866A0E28FFD9D6006C1FEA /* VaultViewController+Delegates.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		613DF9BE28FBB41E00FBC17F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61B225B92902A766001063CB /* String+Extensions.swift */,
+				61B225BB2902A784001063CB /* UIColor+Extensions.swift */,
+				6159797629084E4600429AB3 /* UIFont+Extensions.swift */,
+				61866A1228FFDC4F006C1FEA /* UIImage+Extensions.swift */,
+				61B225C22902C308001063CB /* UINavigationBarAppearance+Extensions.swift */,
+				613DF9BF28FBB43100FBC17F /* UITableView+Extensions.swift */,
+				61B225BF2902B40A001063CB /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		613DF9C128FBB46A00FBC17F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9B328FB753100FBC17F /* Core Data */,
+				61866A0728FF9215006C1FEA /* KeyboardManager.swift */,
+				6198B1D229056B26002DDE8F /* Realm */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		613DF9C628FBBA9C00FBC17F /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				613DF9C428FBBA7700FBC17F /* AnubisBaseTableView.swift */,
+				613DF9C928FBBB0600FBC17F /* AnubisBaseTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		6159797829086CB700429AB3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61B9CC6A290702C300F1332D /* VaultDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6159797929086CC800429AB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6159798129086D3100429AB3 /* VaultDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6159797A29086CCD00429AB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6159797D29086CE800429AB3 /* VaultDetailsVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6159797B29086CD500429AB3 /* Delegates \ Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6159797F29086D0400429AB3 /* VaultDetailsControllerDelegates.swift */,
+			);
+			path = "Delegates \\ Protocols";
+			sourceTree = "<group>";
+		};
+		6159797C29086CDC00429AB3 /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				6159798329086E6700429AB3 /* VaultDetailsControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		615979852908773600429AB3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6159798B2908776100429AB3 /* Configrator */,
+				615979892908775800429AB3 /* Delegates \ Protocols */,
+				615979872908774800429AB3 /* Presenter */,
+				615979882908774D00429AB3 /* Router */,
+				615979862908773E00429AB3 /* ViewController */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		615979862908773E00429AB3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6159798E2908778800429AB3 /* SearchViewController.swift */,
+				61597992290877C200429AB3 /* SearchViewController+Delegates.swift */,
+				61597990290877A400429AB3 /* SearchViewController+TableView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		615979872908774800429AB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6159798C2908776E00429AB3 /* SearchViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		615979882908774D00429AB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				61597994290877F100429AB3 /* SearchVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		615979892908775800429AB3 /* Delegates \ Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				615979962908780800429AB3 /* SearchViewDelegates.swift */,
+			);
+			path = "Delegates \\ Protocols";
+			sourceTree = "<group>";
+		};
+		6159798B2908776100429AB3 /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				615979982908783200429AB3 /* SearchViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		6180C9C828FD384F00D73C97 /* Create Password */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1E92905B177002DDE8F /* Builder */,
+				6198B1D82905715A002DDE8F /* Configrator */,
+				6198B1D929057161002DDE8F /* Delegates \ Protocols */,
+				6198B1DA29057169002DDE8F /* Presenter */,
+				6198B1DB2905716E002DDE8F /* Router */,
+				6180C9CF28FD38B400D73C97 /* ViewController */,
+			);
+			path = "Create Password";
+			sourceTree = "<group>";
+		};
+		6180C9CF28FD38B400D73C97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6180C9D028FD38C600D73C97 /* CreatePasswordViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6180C9D228FD7F1C00D73C97 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				61866A0528FF508A006C1FEA /* AnubisPasswordTextFieldsView.swift */,
+				613DF9C728FBBAA500FBC17F /* AnubisVaultTableViewCell.swift */,
+				618669F828FEF643006C1FEA /* AnubisWebServerTextFieldsView.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		61866A0D28FFD6DA006C1FEA /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				61866A1028FFDA84006C1FEA /* VaultViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		6198B1D229056B26002DDE8F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1D329056B37002DDE8F /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		6198B1D529056C5F002DDE8F /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1D629056C6A002DDE8F /* VaultPasswsordEntity.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		6198B1D82905715A002DDE8F /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1E0290571DF002DDE8F /* CreatePasswordViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		6198B1D929057161002DDE8F /* Delegates \ Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1DE290571A7002DDE8F /* CreatePasswordDelegates.swift */,
+			);
+			path = "Delegates \\ Protocols";
+			sourceTree = "<group>";
+		};
+		6198B1DA29057169002DDE8F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1DC29057187002DDE8F /* CreatePasswordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6198B1DB2905716E002DDE8F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1E229057237002DDE8F /* CreatePasswordRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6198B1E92905B177002DDE8F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				6198B1EA2905B183002DDE8F /* PasswordBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		61B225C62902C8F8001063CB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				61B225CA2902C914001063CB /* VaultVCPreseneter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		61B225C72902C902001063CB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				61B225C82902C90A001063CB /* VaultVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		61B225CC2902C95D001063CB /* Delegates \ Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				61B225CD2902C972001063CB /* VaultViewControllerDelegates.swift */,
+			);
+			path = "Delegates \\ Protocols";
+			sourceTree = "<group>";
+		};
+		61B9CC69290702A700F1332D /* Vault Details */ = {
+			isa = PBXGroup;
+			children = (
+				6159797C29086CDC00429AB3 /* Configrator */,
+				6159797B29086CD500429AB3 /* Delegates \ Protocols */,
+				6159797A29086CCD00429AB3 /* Router */,
+				6159797929086CC800429AB3 /* Presenter */,
+				6159797829086CB700429AB3 /* ViewController */,
+			);
+			path = "Vault Details";
+			sourceTree = "<group>";
+		};
+		7D9B873483DF01A5EC90DA99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C13F4797B3E19F81E8B2582D /* Pods_Anubis_Vault.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		613DF99328FB73F000FBC17F /* Anubis-Vault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613DF9AB28FB73F200FBC17F /* Build configuration list for PBXNativeTarget "Anubis-Vault" */;
+			buildPhases = (
+				C4E70CE494E9202D0A70EBD7 /* [CP] Check Pods Manifest.lock */,
+				613DF99028FB73F000FBC17F /* Sources */,
+				613DF99128FB73F000FBC17F /* Frameworks */,
+				613DF99228FB73F000FBC17F /* Resources */,
+				B27B9B917FBE3A20A23654B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Anubis-Vault";
+			productName = "Anubis-Vault";
+			productReference = 613DF99428FB73F000FBC17F /* Anubis-Vault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		613DF98C28FB73F000FBC17F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					613DF99328FB73F000FBC17F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 613DF98F28FB73F000FBC17F /* Build configuration list for PBXProject "Anubis-Vault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 613DF98B28FB73F000FBC17F;
+			productRefGroup = 613DF99528FB73F000FBC17F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				613DF99328FB73F000FBC17F /* Anubis-Vault */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		613DF99228FB73F000FBC17F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613DF9A728FB73F200FBC17F /* LaunchScreen.storyboard in Resources */,
+				613DF9A428FB73F200FBC17F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B27B9B917FBE3A20A23654B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Anubis-Vault/Pods-Anubis-Vault-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Anubis-Vault/Pods-Anubis-Vault-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Anubis-Vault/Pods-Anubis-Vault-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E70CE494E9202D0A70EBD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anubis-Vault-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		613DF99028FB73F000FBC17F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613DF99828FB73F000FBC17F /* AppDelegate.swift in Sources */,
+				61B225CB2902C914001063CB /* VaultVCPreseneter.swift in Sources */,
+				6198B1D429056B37002DDE8F /* RealmManager.swift in Sources */,
+				613DF9C028FBB43100FBC17F /* UITableView+Extensions.swift in Sources */,
+				61B225C32902C308001063CB /* UINavigationBarAppearance+Extensions.swift in Sources */,
+				6159798229086D3100429AB3 /* VaultDetailsPresenter.swift in Sources */,
+				6159797E29086CE800429AB3 /* VaultDetailsVCRouter.swift in Sources */,
+				6198B1DF290571A7002DDE8F /* CreatePasswordDelegates.swift in Sources */,
+				613DF9A228FB73F000FBC17F /* Anubis_Vault.xcdatamodeld in Sources */,
+				61597995290877F100429AB3 /* SearchVCRouter.swift in Sources */,
+				61B225BE2902B28B001063CB /* AnubisBaseTabBarController.swift in Sources */,
+				615979972908780800429AB3 /* SearchViewDelegates.swift in Sources */,
+				61B225BA2902A766001063CB /* String+Extensions.swift in Sources */,
+				6159798029086D0400429AB3 /* VaultDetailsControllerDelegates.swift in Sources */,
+				6198B1E5290586F2002DDE8F /* AnubisLoadingView.swift in Sources */,
+				613DF9CA28FBBB0600FBC17F /* AnubisBaseTableViewCell.swift in Sources */,
+				6180C9D128FD38C600D73C97 /* CreatePasswordViewController.swift in Sources */,
+				61866A0628FF508A006C1FEA /* AnubisPasswordTextFieldsView.swift in Sources */,
+				613DF9C528FBBA7700FBC17F /* AnubisBaseTableView.swift in Sources */,
+				6198B1E329057238002DDE8F /* CreatePasswordRouter.swift in Sources */,
+				61B9CC6B290702C300F1332D /* VaultDetailsViewController.swift in Sources */,
+				613DF9C828FBBAA500FBC17F /* AnubisVaultTableViewCell.swift in Sources */,
+				61597991290877A400429AB3 /* SearchViewController+TableView.swift in Sources */,
+				615979992908783200429AB3 /* SearchViewControllerConfigrator.swift in Sources */,
+				613DF9CC28FBC7AF00FBC17F /* AnubisBaseUIButton.swift in Sources */,
+				61866A0828FF9215006C1FEA /* KeyboardManager.swift in Sources */,
+				6159798429086E6700429AB3 /* VaultDetailsControllerConfigrator.swift in Sources */,
+				613DF9BB28FB777500FBC17F /* VaultViewController.swift in Sources */,
+				6198B1D729056C6A002DDE8F /* VaultPasswsordEntity.swift in Sources */,
+				61B225CE2902C972001063CB /* VaultViewControllerDelegates.swift in Sources */,
+				613DF99A28FB73F000FBC17F /* SceneDelegate.swift in Sources */,
+				61B225C92902C90A001063CB /* VaultVCRouter.swift in Sources */,
+				613DF9BD28FB805700FBC17F /* AnubisBaseUITextField.swift in Sources */,
+				6159798D2908776E00429AB3 /* SearchViewPresenter.swift in Sources */,
+				613DF9B628FB771000FBC17F /* AnubisBaseViewController.swift in Sources */,
+				61866A1328FFDC4F006C1FEA /* UIImage+Extensions.swift in Sources */,
+				61B225C02902B40A001063CB /* UIView+Extensions.swift in Sources */,
+				61597993290877C200429AB3 /* SearchViewController+Delegates.swift in Sources */,
+				618669F928FEF643006C1FEA /* AnubisWebServerTextFieldsView.swift in Sources */,
+				61B225BC2902A784001063CB /* UIColor+Extensions.swift in Sources */,
+				61866A1128FFDA84006C1FEA /* VaultViewControllerConfigrator.swift in Sources */,
+				6159797729084E4600429AB3 /* UIFont+Extensions.swift in Sources */,
+				6180C9C328FCF62900D73C97 /* VaultViewController+TableView.swift in Sources */,
+				61866A0F28FFD9D6006C1FEA /* VaultViewController+Delegates.swift in Sources */,
+				6159798F2908778800429AB3 /* SearchViewController.swift in Sources */,
+				6198B1EB2905B183002DDE8F /* PasswordBuilder.swift in Sources */,
+				618669F728FEF62B006C1FEA /* AnubisBaseUIView.swift in Sources */,
+				6198B1E1290571DF002DDE8F /* CreatePasswordViewControllerConfigrator.swift in Sources */,
+				6198B1DD29057187002DDE8F /* CreatePasswordPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		613DF9A528FB73F200FBC17F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613DF9A628FB73F200FBC17F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		613DF9A928FB73F200FBC17F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		613DF9AA28FB73F200FBC17F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		613DF9AC28FB73F200FBC17F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC7E6ACBCD4D92D81DDFEDD /* Pods-Anubis-Vault.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Anubis-Vault/Configuration/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Anubis-Vault";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shadudiix.Anubis-Vault";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		613DF9AD28FB73F200FBC17F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D37D700DC88B5DF05F3B58 /* Pods-Anubis-Vault.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Anubis-Vault/Configuration/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Anubis-Vault";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shadudiix.Anubis-Vault";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		613DF98F28FB73F000FBC17F /* Build configuration list for PBXProject "Anubis-Vault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613DF9A928FB73F200FBC17F /* Debug */,
+				613DF9AA28FB73F200FBC17F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		613DF9AB28FB73F200FBC17F /* Build configuration list for PBXNativeTarget "Anubis-Vault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613DF9AC28FB73F200FBC17F /* Debug */,
+				613DF9AD28FB73F200FBC17F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		613DF9A028FB73F000FBC17F /* Anubis_Vault.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				613DF9A128FB73F000FBC17F /* Anubis_Vault.xcdatamodel */,
+			);
+			currentVersion = 613DF9A128FB73F000FBC17F /* Anubis_Vault.xcdatamodel */;
+			path = Anubis_Vault.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 613DF98C28FB73F000FBC17F /* Project object */;
+}
